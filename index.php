@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php
-    echo 'Ciallo world!<br/>';
-    echo date('Y-m-d H:i:s');
-    ?>
-</body>
+    <head>
+		<meta charset="UTF-8">
+        <title>My first Web page</title>
+		<style>
+				html {
+						font-size: 22px
+				}
+				
+				body {
+						background-color: #333;
+						color: whitesmoke;
+				}
+		</style>
+    </head>
+    
+    <body>
+       <h1>Ciallo World!</h1> 
+       <p>Here are some contents.</p>
+    </body>
 </html>
