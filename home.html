@@ -18,7 +18,7 @@
 			<ul>
 				<li><a href="#Moreschedule">Step I:</a></li>
 				<li><a href="#Where">Step II:</a></li>
-				<li>Step III:</li>
+				<li><a href="#Avoid">Step III:</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -68,13 +68,46 @@
 			<li>Release your bad moods in an harmless way.</li>
 		</ul>
 
+		<article id="Avoid">
 		<h3>Places that I want to avoid:</h3>
 		<dl>
 			<dt>North pole.</dt>
 			<dd>Since it's too <strong>cold</strong>.</dd>
 			<dt>South pole.</dt>
 			<dd>It's also very <strong>cold</strong>.</dd>
+			<p>Where would you not like to go:</p>
+			<form action="https://httpbing.org/get" method="get"></form>
+			<p>
+			<label for="firstname">First name:</label>
+			<input type="text" name="firstname" id="firstname" placeholder="Orlando" required="on" autocomplete="on" autofocus><br>
+			</p>
+			<p>
+			<label for="lastname">Last name:</label>
+			<input type="text" name="lastname" id="lastname" placeholder="Furioso" required="on" autocomplete="on"><br>
+			</p>
+			<p>
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" required="on" autocomplete="on"><br>
+			</p>
+			<p>
+			<label for="decade">Favourite decade:</label>
+			<input type="number" name="decade" id="decade" required="on" min="1950" max="2020" step="10" value="1980">
+			</p>
+			<p>
+				<label for="coffee">Favourite coffee:</label>
+				<select name="coffee" id="coffee">
+					<optgroup label="coffees">
+						<option value="Regular coffee">Regular coffee</option>
+						<option value="Iced coffee">Iced coffee</option>
+						<option value="American coffee">American coffee</option>
+					</optgroup>
+					<optgroup label="Others">
+						<option value="Others">Others</option>
+					</optgroup>
+				</select>
+			</p>
 		</dl>
+		</article>
 	</main>
 	<hr>
 	<footer>
