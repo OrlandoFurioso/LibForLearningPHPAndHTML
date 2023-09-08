@@ -75,30 +75,31 @@
 			<dd>Since it's too <strong>cold</strong>.</dd>
 			<dt>South pole.</dt>
 			<dd>It's also very <strong>cold</strong>.</dd>
-			<p>Where would you not like to go:</p>
+			<dd>Where would you not like to go:</dd>
+		</dl>
 			<form action="https://httpbing.org/get" method="get"></form>
 			<fieldset>
 				<legend>Personal Info:</legend>
 			<p>
 			<label for="firstname">First name:</label>
-			<input type="text" name="firstname" id="firstname" placeholder="Orlando" required="on" autocomplete="on" autofocus><br>
+			<input type="text" name="firstname" id="firstname" placeholder="Orlando" required autocomplete="on" autofocus><br>
 			</p>
 			<p>
 			<label for="lastname">Last name:</label>
-			<input type="text" name="lastname" id="lastname" placeholder="Furioso" required="on" autocomplete="on"><br>
+			<input type="text" name="lastname" id="lastname" placeholder="Furioso" required autocomplete="on"><br>
 			</p>
 			<p>
 			<label for="password">Password:</label>
-			<input type="password" name="password" id="password" required="on" autocomplete="on"><br>
+			<input type="password" name="password" id="password" required autocomplete="on"><br>
 			</p>
 			<p>
 			<label for="decade">Favourite decade:</label>
-			<input type="number" name="decade" id="decade" required="on" min="1950" max="2020" step="10" value="1980">
+			<input type="number" name="decade" id="decade" required min="1950" max="2020" step="10" value="1980">
 			</p>
 			<hr>
 			<p>
 				<label for="coffee">Favourite coffee:</label>
-				<select name="coffee" id="coffee" multiple="4">
+				<select name="coffee" id="coffee" multiple size="4">
 					<optgroup label="coffees">
 						<option value="Regular coffee">Regular coffee</option>
 						<option value="Iced coffee">Iced coffee</option>
@@ -110,14 +111,13 @@
 				</select>
 			</p>
 			</fieldset>
-		</dl>
 		</article>
 		<form action="https://httpbing.org" method="get">
 		<fieldset>
 			<legend>What is your favourite coffee?</legend>
 		<p>
-			<label for="coffee">Favourite coffee 2:</label>
-			<input type="text" name="coffee" id="coffee" list="coffee-list">
+			<label for="coffe">Favourite coffee 2:</label>
+			<input type="text" name="coffe" id="coffe" list="coffee-list">
 			<datalist id="coffee-list">
 				<option value="coffee">
 				<option value="latte">
@@ -131,9 +131,9 @@
 		<br>
 		<fieldset>
 			<legend>What's your favourite food?</legend>
-			<p><input type="radio" name="food" id="tacos" value="tacos"><label for="tacos">Tacos</label></label></p>
-			<p><input type="radio" name="food" id="pizza" value="pizza"><label for="pizza">Pizza</label></label></p>
-			<p><input type="radio" name="food" id="other" value="other"><label for="other">other</label></label></p>
+			<p><input type="radio" name="food" id="tacos" value="tacos"><label for="tacos">Tacos</label></p>
+			<p><input type="radio" name="food" id="pizza" value="pizza"><label for="pizza">Pizza</label></p>
+			<p><input type="radio" name="food" id="other" value="other"><label for="other">other</label></p>
 		</fieldset>
 		<br>
 		<fieldset>
@@ -150,6 +150,7 @@
 		</fieldset>
 		<br>
 		<button type="submit">Submit</button>
+		<button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
 		<button type="reset">Reset</button>
 		</form>
 	</main>
